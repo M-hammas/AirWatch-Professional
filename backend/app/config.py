@@ -1,9 +1,10 @@
+
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class Settings(BaseSettings):
     app_name: str = "AirWatch API"
     api_prefix: str = "/api"
-    database_url: str = "mysql+pymysql://root:password@localhost:3306/airwatch"
+    database_url: str = "postgresql+psycopg://postgres:password@localhost:5432/airwatch"
     secret_key: str = "development-only-change-this-secret"
     access_token_expire_minutes: int = 1440
     frontend_origin: str = "http://localhost:5173"
