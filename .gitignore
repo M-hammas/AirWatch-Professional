@@ -10,3 +10,5 @@ dist/
 .vscode/
 .idea/
 .DS_Store
+.neon
+.env.local
